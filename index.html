@@ -251,22 +251,7 @@
             </div>
         </div>
     </div>
-    <!-- Header End -->
-     <div class="container py-5">
-        <div class="info-container">
-            <div class="info-card">
-              <i class="fas fa-clock icon"></i>
-              <h4>Jadwal Praktek Dokter</h4>
-              <p>Senin - Minggu</p>
-              <p>07:00 - 23:00</p>
-              <a href="https://wa.me/628116012124" class="info-button" target="_blank">0811 6012 124</a>
-          
-              <!-- Gantungan Paku -->
-            
-          </div>
-          
-     </div>
-
+    
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -546,10 +531,10 @@
                         <form id="wa-form">
                             <div class="row g-3">
                               <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" id="name" required style="height: 55px;">
+                                <input type="text" class="form-control border-0" placeholder="Your Name" id="name" required style="height: 55px;" autocomplete="name">
                               </div>
                               <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" id="email" required style="height: 55px;">
+                                <input type="email" class="form-control border-0" placeholder="Your Email" id="email" required style="height: 55px;" autocomplete="email">
                               </div>
                               <div class="col-12 col-sm-6">
                                 <input type="text" class="form-control border-0" placeholder="Your Mobile" id="mobile" required style="height: 55px;">
@@ -621,7 +606,7 @@
             const sign = document.getElementById("signboard");
             const text = document.getElementById("statusText");
         
-            if (hour >= 1 && hour < 21) {
+            if (hour >= 9 && hour < 21) {
               text.innerText = "BUKA";
               sign.classList.remove("tutup");
             } else {
@@ -705,30 +690,18 @@
            </div>
         </div>
      </footer>
-
-    <div class="copyright-area wow fadeIn">
+     <div class="copyright-area wow fadeIn">
         <div class="container">
-           <div class="row">
-              <div class="col-md-8">
-                 <div class="footer-text text-center">
-                    <p>© 2025. Created by <a  id="tw" href="https://github.com/MrBercisk" target="_blank">BeES</a></p>
-                 </div>
-              </div>
-              <!-- <div class="col-md-4">
-                 <div class="social">
-                    <ul class="social-links">
-                       <li><a href=""><i class="fa fa-rss"></i></a></li>
-                       <li><a href=""><i class="fas fa-facebook"></i></a></li>
-                       <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                       <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                       <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                       <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                    </ul>
-                 </div>
-              </div> -->
-           </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="footer-text">
+                        <p>© 2025. Created by <a id="tw" href="https://github.com/MrBercisk" target="_blank">BeES</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-     </div>
+    </div>
+    
 
 
     <!-- Back to Top -->
