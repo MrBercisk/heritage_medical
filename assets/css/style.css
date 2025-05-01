@@ -4,6 +4,9 @@
     --light: #EFF5FF;
     --dark: #1B2C51;
 }
+body{
+    overflow-x: hidden;
+}
 
 .fw-medium {
     font-weight: 500 !important;
@@ -113,8 +116,8 @@
   
 .whatsapp-float {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 60px;
     z-index: 9999;
     width: 60px;
     height: 60px;
