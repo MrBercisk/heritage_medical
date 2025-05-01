@@ -769,7 +769,7 @@ body.clinic_version .footer .widget-title h3 {
     background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
 }
 .footer-area {
-    background: #fff;
+    background: #fe0000;
     padding: 80px 0px;
     color: #fff;
     font-size: 14px;
@@ -781,7 +781,7 @@ body.clinic_version .footer .widget-title h3 {
     margin-bottom: 30px;
 }
 .footer-area p {
-    color: #999;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
 }
@@ -792,11 +792,11 @@ body.clinic_version .footer .widget-title h3 {
     padding: 0;
     position: relative;
 }
-.footer-info h3, .subcriber-info h3 {
-    color: #222;
+.footer-info h3, .subcriber-info h3 , .footer-map h4{
+    color: #fff;
     font-size: 22px;
     font-weight: 600;
-    border-left: solid #157fda 5px;
+    border-left: solid #fff 5px;
     padding: 0 0 0 15px;
     margin-bottom: 24px;
 }
@@ -815,7 +815,7 @@ body.clinic_version .footer .widget-title h3 {
 .copyright-area {
     padding: 20px 0px;
     /* background: #157fda; */
-    background: #d26489;
+    background: #fe0000;
     color: #fff;
 	float:left;
 	width:100%;
@@ -846,7 +846,7 @@ body.clinic_version .footer .widget-title h3 {
     font-size: 25px;
     width: 30px;
     text-align: center;
-	color: #157fda;
+	color: white;
 }
 .preloader {
     width: 350px;

@@ -139,19 +139,19 @@
   
   
 .text-pink{
-    color: #e89ab4;
+    color: #FE0000;
 
 }
 .text-pink2{
-    color: #ef2568;
+    color: #FE0000;
 
 }
 .bg-pink{
-    background-color: #e89ab4;
+    background-color: #FE0000;
 
 }
 .btn-pink {
-    background-color: #e89ab4;
+    background-color: #FE0000;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -163,7 +163,7 @@
   }
   
   .btn-pink:hover {
-    background-color: #d2789c;
+    background-color: #FE0000;
     color: white;
   }
   
@@ -255,7 +255,7 @@
   /* (Opsional) Ganti warna teks saat hover atau active */
   .navbar .navbar-nav .nav-link:hover,
   .navbar .navbar-nav .nav-link.active {
-    color: #e89ab4;
+    color: #FE0000;
   }
   
 @media (max-width: 991.98px) {

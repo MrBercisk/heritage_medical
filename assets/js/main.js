@@ -45,17 +45,21 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
+        autoplayTimeout: 3000, // Ganti slide setiap 3 detik
+        autoplayHoverPause: false, // Tetap autoplay walau mouse hover
         animateOut: 'fadeOutLeft',
+        smartSpeed: 800, // Kecepatan transisi antar slide
         items: 1,
         dots: true,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+    
 
 
     
