@@ -203,26 +203,50 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="/assets/img/fotolokasi.webp" alt="Foto Lokasi Klinik Heritage Medical">
-                        <img class="img-fluid rounded w-50 bg-white pt-2 pe-2" src="/assets/img/fotolokasi2.jpg" alt="Foto Interior Klinik" style="margin-top: -25%;">
-                    </div>
+                <!-- Kolom Kontak -->
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Kontak Kami</h2>
+                    <p class="mb-4">Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan atau membutuhkan bantuan, silakan hubungi kami melalui informasi di bawah ini.</p>
+                    
+                    <!-- Form Kontak -->
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan Email Anda">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Masukkan Pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Tentang Kami</p>
-                    <h1 class="mb-4">Heritage Medical</h1>
-                    <p><strong>Heritage Medical</strong> adalah Praktek Dokter dengan melayani Konsultasi dan Pemeriksaan Kesehatan, dan ditangani oleh
-                        Dokter dan Tenaga Medis yang berpengalaman, Heritage Medical menawarkan layanan konsultasi dan Pengobatan
-                        dengan standar pelayanan terbaik dan harga terjangkau, serta privacy pasien tetap terjaga.
-                    </p>
-                    <p>Klinik <strong>Heritage Medical</strong> hadir dengan komitmen memberikan pelayanan kesehatan yang profesional, ramah, dan terpercaya. Dengan fasilitas modern dan suasana yang nyaman, kami siap menjadi mitra Anda dalam menjaga kesehatan keluarga.</p>
-                    <p class="mb-4">Didukung oleh dokter dan tenaga medis berpengalaman, kami menyediakan layanan pemeriksaan umum, konsultasi spesialis, serta penanganan berbagai keluhan kesehatan Anda secara menyeluruh dan personal.</p>
-                    <p><strong>Heritage Medical</strong> selain menangani pengobatan Penyakit umum, Khitanan(sunat), juga menangani keluhan seperti Gonorea, Sifilis, Keputihan berlebihan. Ada juga pengobatan untuk Kutil Kelamin, Herpes dan menyediakan pemeriksaan Laboratorium</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Pelayanan kesehatan berkualitas & profesional</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Ditangani langsung oleh dokter yang berpengalaman</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Fasilitas modern dan nyaman untuk seluruh keluarga</p>
-                    <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="/about/">Selengkapnya</a> -->
+    
+                <!-- Kolom Peta -->
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Lokasi Kami</h2>
+                    <p class="mb-4">Berikut adalah lokasi kami. Anda dapat menemui kami di alamat berikut:</p>
+    
+                    <!-- Peta Google Maps -->
+                    <div class="position-relative rounded overflow-hidden shadow" style="height: 0; overflow: hidden; max-width: 100%; height: auto; border: 2px solid rgba(255,255,255,0.1);">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5406874117815!2d107.00399306945634!3d-6.242270666455222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d006998deeb%3A0xf5969d003d29ab0b!2sHeritage%20Medical!5e0!3m2!1sid!2sid!4v1746019146983!5m2!1sid!2sid" 
+                            width="600" height="450"
+                            style="border:0; transition: transform 0.5s ease;" 
+                            allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            onmouseover="this.style.transform='scale(1.02)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                        </iframe>
+                        <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-1 small rounded-top">
+                            📍 Heritage Medical - Bekasi
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

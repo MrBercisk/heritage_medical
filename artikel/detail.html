@@ -199,37 +199,35 @@
     
     
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded w-75 align-self-end" src="/assets/img/fotolokasi.webp" alt="Foto Lokasi Klinik Heritage Medical">
-                        <img class="img-fluid rounded w-50 bg-white pt-2 pe-2" src="/assets/img/fotolokasi2.jpg" alt="Foto Interior Klinik" style="margin-top: -25%;">
-                    </div>
+    <section style="background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%); position: relative;">
+        <div class="container-xxl py-5">
+          <div class="container">
+            <div class="row">
+              <!-- Bagian Kiri (Gambar) -->
+              <div class="col-md-6 mb-4">
+                <div class="article-image">
+                  <img id="articleImage" src="" alt="Gambar Artikel" class="img-fluid rounded-4 shadow-lg">
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Tentang Kami</p>
-                    <h1 class="mb-4">Heritage Medical</h1>
-                    <p><strong>Heritage Medical</strong> adalah Praktek Dokter dengan melayani Konsultasi dan Pemeriksaan Kesehatan, dan ditangani oleh
-                        Dokter dan Tenaga Medis yang berpengalaman, Heritage Medical menawarkan layanan konsultasi dan Pengobatan
-                        dengan standar pelayanan terbaik dan harga terjangkau, serta privacy pasien tetap terjaga.
-                    </p>
-                    <p>Klinik <strong>Heritage Medical</strong> hadir dengan komitmen memberikan pelayanan kesehatan yang profesional, ramah, dan terpercaya. Dengan fasilitas modern dan suasana yang nyaman, kami siap menjadi mitra Anda dalam menjaga kesehatan keluarga.</p>
-                    <p class="mb-4">Didukung oleh dokter dan tenaga medis berpengalaman, kami menyediakan layanan pemeriksaan umum, konsultasi spesialis, serta penanganan berbagai keluhan kesehatan Anda secara menyeluruh dan personal.</p>
-                    <p><strong>Heritage Medical</strong> selain menangani pengobatan Penyakit umum, Khitanan(sunat), juga menangani keluhan seperti Gonorea, Sifilis, Keputihan berlebihan. Ada juga pengobatan untuk Kutil Kelamin, Herpes dan menyediakan pemeriksaan Laboratorium</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Pelayanan kesehatan berkualitas & profesional</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Ditangani langsung oleh dokter yang berpengalaman</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Fasilitas modern dan nyaman untuk seluruh keluarga</p>
-                    <!-- <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="/about/">Selengkapnya</a> -->
+              </div>
+      
+              <!-- Bagian Kanan (Detail Artikel) -->
+              <div class="col-md-6 mb-4">
+                <div class="article-detail">
+                  <h2 id="articleTitle" class="text-dark fs-3 mb-3"></h2>
+                  <p class="text-muted mb-4" id="articleDate"></p>
+                  <div id="articleContent" class="fs-5 text-dark mb-4"></div>
+                  <ul id="articleSymptoms" class="list-unstyled fs-6 text-dark">
+                    <!-- Ciri-ciri Gonorea akan muncul di sini -->
+                  </ul>
                 </div>
+              </div>
             </div>
+      
+            <a href="/artikel/" class="btn btn-outline-danger rounded-pill shadow-sm">Kembali ke Artikel</a>
+          </div>
         </div>
-    </div>
-    
-    <!-- About End -->
-    
+      </section>
+      
 
    
       
@@ -323,6 +321,7 @@
     <script src="/assets/js/custom.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/submenu.js"></script>
+    <!-- <script src="/assets/js/artikel.js"></script> -->
 </body>
 
 </html>

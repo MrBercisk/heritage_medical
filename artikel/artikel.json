@@ -1,0 +1,22 @@
+{
+    "1": {
+      "title": "Gonorea",
+      "date": "30 April 2025",
+      "content": "Gonorea atau Kencing Nanah adalah Penyakit Menular Seksual yang disebabkan oleh Bakteri Neisseria Gonnorrhoeae, dan Gonorea menyerang pria maupun wanita akibat hubungan seksual yang tidak aman. Ciri-ciri penyakit Gonorea:",
+        "symptoms": [
+        "Nyeri saat buang air kecil",
+        "Keluar nanah dari saluran kencing",
+        "Bengkak dan kemerahan pada testis",
+        "Nyeri saat berhubungan intim",
+        "Keputihan tidak normal"
+        ],
+      "image": "/assets/img/artikel/gonorea.jpg"
+    },
+    "2": {
+      "title": "Keputihan Berlebihan",
+      "date": "30 April 2025",
+      "content": "Keputihan adalah kondisi normal dimana lendir atau cairan keluar dari vagina, namun akan menjadi masalah jika terjadi perubahan warna, bau atau tekstur(Keputihan Abnormal). Keputihan abnormal dengan ciri-ciri cairan berwarna kuning, hinjau atau abu-abu, berbau tidak sedap, menyebabkan gatal dan iritasi yang disebabkan oleh infeksi Bakteri(Vaginosis Bakterialis), Jamur(Candidiasis),Gonorea, Clamedia dan Trikomoniasis. Pengobatan tergantung pada penyebabnya meliputi Antibiotik untuk infeksi Bakteri dan Anti Jamur untuk infeksi Jamur. Pencegahan dengna cara membersihkan area kewanitaan, hindari penggunaan sabun dan pewangi, dan gunakan kondom saat berhubungan",
+      "image": "/assets/img/artikel/keputihan.jpg"
+    }
+  }
+  
