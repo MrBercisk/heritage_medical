@@ -392,16 +392,6 @@
       </section>
       
       
-    <!-- Bagian artikel yang akan ditampilkan -->
-    <div id="articleDetail" style="display:none;">
-        <h1 id="articleTitle"></h1>
-        <p id="articleDate"></p>
-        <img id="articleImage" alt="Article Image"/>
-        <div id="articleContent"></div>
-        <ul id="articleSymptoms"></ul>
-    </div>
-
-      
       
     <!-- artikel end -->
 
@@ -482,113 +472,89 @@
     <!-- Team Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Dokter</p>
-                <h1>Dokter Berpengalaman</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="assets/img/team-1.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Dokter A</h5>
-                            <p class="text-primary">Department</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+          <div class="row g-5">
+            
+            <!-- Kolom Kiri -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <p class="d-inline-block border rounded-pill py-1 px-4 text-danger fw-semibold bg-white">Janji Temu</p>
+              <h1 class="mb-4 text-dark">Buat Janji Temu dengan Dokter Kami</h1>
+              <p class="mb-4">
+                Konsultasikan keluhan kesehatan Anda bersama tim dokter profesional kami. Kami siap membantu Anda mendapatkan penanganan terbaik dengan pelayanan yang cepat dan ramah.
+              </p>
+              <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                  <i class="fa fa-phone-alt text-primary"></i>
                 </div>
-              
+                <div class="ms-4">
+                  <p class="mb-2">Hubungi Kami</p>
+                  <h5 class="mb-0">088809135353 / 08111038401</h5>
+                </div>
+              </div>
+      
+              <!-- ▶️ Perbaikan: tambahkan tanda ">" pada tag penutup -->
+              <div class="bg-light rounded d-flex align-items-center p-5">
+                <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                  <i class="fa fa-envelope-open text-primary"></i>
+                </div>
+                <div class="ms-4" style="max-width: calc(100% - 75px);">
+                  <p class="mb-2">Kirim Email</p>
+                  <h5 class="mb-0" style="word-wrap: break-word; white-space: normal;">
+                    heritagemedical9@gmail.com
+                  </h5>
+                </div>
+              </div>
             </div>
+            <!-- /Kolom Kiri -->
+      
+            <!-- Kolom Kanan (Formulir Janji Temu) -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                <form id="wa-form">
+                  <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                      <input type="text" class="form-control border-0" placeholder="Nama Anda" id="name" required style="height: 55px;" autocomplete="name">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input type="email" class="form-control border-0" placeholder="Email Anda" id="email" required style="height: 55px;" autocomplete="email">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input type="text" class="form-control border-0" placeholder="Nomor Telepon" id="mobile" required style="height: 55px;">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <select class="form-select border-0" id="doctor" required style="height: 55px;">
+                        <option selected disabled>Pilih Dokter</option>
+                        <option value="Doctor 1">Dokter 1</option>
+                        <option value="Doctor 2">Dokter 2</option>
+                        <option value="Doctor 3">Dokter 3</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="date" id="date" data-target-input="nearest">
+                        <input type="text" class="form-control border-0 datetimepicker-input" id="dateInput" placeholder="Pilih Tanggal" data-target="#date" data-toggle="datetimepicker" required style="height: 55px;">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <div class="time" id="time" data-target-input="nearest">
+                        <input type="text" class="form-control border-0 datetimepicker-input" id="timeInput" placeholder="Pilih Waktu" data-target="#time" data-toggle="datetimepicker" required style="height: 55px;">
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <textarea class="form-control border-0" rows="5" placeholder="Deskripsikan keluhan Anda" id="problem"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-danger w-100 py-3" type="submit">Buat Janji Sekarang</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /Kolom Kanan -->
+      
+          </div>
         </div>
-    </div>
-    <!-- Team End -->
-
-
-    <!-- Appointment Start -->
-    <div class="container-xxl py-5" style="background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%);">
-        <div class="container">
-            <div class="row g-5">
-                <!-- Kolom Kiri -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4 text-danger fw-semibold bg-white">Janji Temu</p>
-                    <h1 class="mb-4 text-dark">Buat Janji Temu dengan Dokter Kami</h1>
-                    <p class="mb-4">
-                        Konsultasikan keluhan kesehatan Anda bersama tim dokter profesional kami. Kami siap membantu Anda mendapatkan penanganan terbaik dengan pelayanan yang cepat dan ramah.
-                    </p>
-                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt text-primary"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2" >Hubungi Kami</p>
-                            <h5 class="mb-0">088809135353 / 08111038401</h5>
-                        </div>
-                    </div>
-                    <div class="bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                            <i class="fa fa-envelope-open text-primary"></i>
-                        </div>
-                        <div class="ms-4" style="max-width: calc(100% - 75px);">
-                            <p class="mb-2">Kirim Email</p>
-                            <h5 class="mb-0" style="word-wrap: break-word; white-space: normal;">
-                                heritagemedical9@gmail.com
-                            </h5>
-                        </div
-                    </div>
-                </div>
+      </div>
+      
     
-                <!-- Kolom Kanan (Formulir Janji Temu) -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
-                        <form id="wa-form">
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Nama Anda" id="name" required style="height: 55px;" autocomplete="name">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Email Anda" id="email" required style="height: 55px;" autocomplete="email">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Nomor Telepon" id="mobile" required style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" id="doctor" required style="height: 55px;">
-                                        <option selected disabled>Pilih Dokter</option>
-                                        <option value="Doctor 1">Dokter 1</option>
-                                        <option value="Doctor 2">Dokter 2</option>
-                                        <option value="Doctor 3">Dokter 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control border-0 datetimepicker-input" id="dateInput" placeholder="Pilih Tanggal" data-target="#date" data-toggle="datetimepicker" required style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control border-0 datetimepicker-input" id="timeInput" placeholder="Pilih Waktu" data-target="#time" data-toggle="datetimepicker" required style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" rows="5" placeholder="Deskripsikan keluhan Anda" id="problem"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-danger w-100 py-3" type="submit">Buat Janji Sekarang</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- Akhir Kolom Kanan -->
-            </div>
-        </div>
-    </div>
     
     <!-- Appointment End -->
       
@@ -598,7 +564,7 @@
                 <!-- Logo & Deskripsi -->
                 <div class="col-md-6 col-lg-4">
                     <div class="d-flex align-items-center mb-3">
-                        <img src="assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
+                        <img src="/assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
                         <h4 class="text-white ms-3 mb-0">Heritage Medical</h4>
                     </div>
                     <p class="text-white">Jl. Insinyur H. Juanda No.89, RT.001/RW.004, Bekasi Jaya, Kec. Bekasi Timur, Kota Bekasi, Jawa Barat 17113.</p>
@@ -656,21 +622,6 @@
         </div>
     </footer>
     
-    
-     <!-- <div class="copyright-area wow fadeIn">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <div class="footer-text">
-                        <p>© 2025  <a id="tw" href="https://github.com/MrBercisk" target="_blank">BeEs. All Rights Reserved</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    
-
-
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
