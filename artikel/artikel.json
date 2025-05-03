@@ -17,6 +17,35 @@
       "date": "30 April 2025",
       "content": "Keputihan adalah kondisi normal dimana lendir atau cairan keluar dari vagina, namun akan menjadi masalah jika terjadi perubahan warna, bau atau tekstur(Keputihan Abnormal). Keputihan abnormal dengan ciri-ciri cairan berwarna kuning, hinjau atau abu-abu, berbau tidak sedap, menyebabkan gatal dan iritasi yang disebabkan oleh infeksi Bakteri(Vaginosis Bakterialis), Jamur(Candidiasis),Gonorea, Clamedia dan Trikomoniasis. Pengobatan tergantung pada penyebabnya meliputi Antibiotik untuk infeksi Bakteri dan Anti Jamur untuk infeksi Jamur. Pencegahan dengna cara membersihkan area kewanitaan, hindari penggunaan sabun dan pewangi, dan gunakan kondom saat berhubungan",
       "image": "/assets/img/artikel/keputihan.jpg"
+    },
+    "4": {
+      "title": "Sifilis / Raja Singa",
+      "date": "30 April 2025",
+      "content": "Sifilis adalah Penyakit Menular Seksual yang disebabkan oleh Bakteri Treponema Pallidum, Sifilis tertular akibat hubungan seksual tidak aman dan bisa menular melalui ASI. Tahap gejala Sifilis:",
+        "symptoms": [
+        "Sifilis Primer (Luka kecil pada kelamin)",
+        "Sifilis Sekunder (Ruam pada tangan dan kaki, demam, nyeri sendi)",
+        "Sifilis Laten (tubuh terasa sehat namun bakteri masih berinkubasi di dalam tubuh)",
+        "Sifilis Tersier (jika tidak diobati bakteri akan merusak organ penting seperti otak, jantung dan saraf)"
+        ],
+      "image": "/assets/img/artikel/sifilis.jpg"
+    },
+    "3": {
+      "title": "Kutil Kelamin",
+      "date": "30 April 2025",
+      "content": "Kutil Kelamin atau Kondiloma Akuminata adalah infeksi menular seksual yang disebabkan oleh Virus Human Papilomavirus(HPV). Kutil ini muncul sebagai benjolan kecil secara berkelompok pada aera kelamin akibat kontak seksual tidak aman (tanpa kondom, gonta-ganti pasangan seksual, sistem kekebalan tubuh yang lemah) Gejala kutil antara lain:",
+        "symptoms": [
+        "Benjolan kecil area kelamin dan anus",
+        "Gatal dan sensasi terbakar",
+        "Nyeri dan pendarahan saat berhubungan seksual"
+        ],
+      "image": "/assets/img/artikel/kutil.jpg"
+    },
+    "5": {
+      "title": "Herpes Genital",
+      "date": "30 April 2025",
+      "content": "Herpes adalah infeksi yang disebabkan oleh Virus Herpes Simplex (HSV) yang menyebabkan Herpes Oral (area mulut/wajah) dan HSV-2 yang menyebabkan Herpes Genital (area kelamin), juga Varicella-Zoster Virus (VZV) / cacar air. Dua jenis infeksi ini ditandai dengan munculnya lepuhan berisi cairan pada kulit yang berada nyeri, demam, pembesaran kelenjar getah bening.Herpes diakibatkan oleh kontak langsung dengan cairan tubuh/air liur penderita. Meskipun belum ada obat untuk menyembuhkan Herpes namun pengobatan dapat mengurangi gejala dan frekuensi kambuh, dan akan diberikan Vaksin HSV.",
+      "image": "/assets/img/artikel/herpes.jpg"
     }
   }
   

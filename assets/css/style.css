@@ -3,6 +3,10 @@
     --primary: #0463FA;
     --light: #EFF5FF;
     --dark: #1B2C51;
+    --primary-color: #ff0000; /* Merah Cerah */
+    --secondary-color: #ffffff; /* Putih */
+    --accent-color: #00c853; /* Hijau */
+    --text-color: #222222;
 }
 body{
     overflow-x: hidden;
@@ -406,15 +410,79 @@ body{
 }
 
 
+
 /*** Service ***/
 .service-item {
-    transition: .5s;
-}
-
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  }
 .service-item:hover {
     margin-top: -10px;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .08);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .curtain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: rgba(220, 53, 69, 0.9); /* merah transparan */
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+    z-index: 1;
+  }
+
+  .curtain.right {
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
+  }
+
+  .service-item:hover .curtain.left {
+    transform: translateX(0);
+  }
+
+  .service-item:hover .curtain.right {
+    transform: translateX(0);
+  }
+
+  .btn-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background: white;
+    color: #dc3545;
+    border: 2px solid #dc3545;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 18px;
+    transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
+    opacity: 0;
+    pointer-events: auto;
+    z-index: 2;
+  }
+
+  .service-item:hover .btn-eye {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  .btn-eye:hover {
+    background-color: #dc3545;
+    color: white;
+  }
 
 .service-item .btn {
     width: 40px;
@@ -746,6 +814,41 @@ body{
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
+  .promo-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .promo-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .promo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .promo-card:hover .promo-overlay {
+    opacity: 1;
+  }
+  
+  .promo-overlay button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+  #scrollArticles .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
   
   .article-image img {
     max-width: 100%;

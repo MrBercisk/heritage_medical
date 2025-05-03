@@ -104,5 +104,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const walk = (x - startX) * 2;
       slider.scrollLeft = scrollLeft - walk;
     });
+    const modalPreview = document.getElementById('modalPreview');
+    modalPreview.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget;
+      const imgSrc = button.getAttribute('data-img');
+      const imgElement = modalPreview.querySelector('#previewImage');
+      imgElement.src = imgSrc;
+    });
  
   });
