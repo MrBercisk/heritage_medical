@@ -33,6 +33,8 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -156,16 +158,7 @@
                     <li class="nav-item">
                         <a href="/artikel/" class="nav-link">Artikel</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="feature.html">Feature</a></li>
-                            <li><a class="dropdown-item" href="team.html">Our Doctor</a></li>
-                            <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
-                            <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
-                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                        </ul>
-                    </li> -->
+                 
                     <li class="nav-item">
                         <a href="/kontak/" class="nav-link">Kontak Kami</a>
                     </li>
@@ -201,7 +194,7 @@
     <div class="container-fluid header bg-pink p-0 mb-5">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <!-- Left Content -->
-            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-6 p-5 wow fadeInLeft" data-wow-delay="0.1s">
                 <h1 class="display-4 text-white mb-4">Praktek Dokter Murah & Terpercaya</h1>
                 <p class="text-light fs-3 mb-5">Heritage Medical hadir di Bekasi memberikan layanan dan konsultasi kesehatan terbaik untuk seluruh keluarga dengan harga terjangkau dan tenaga medis berpengalaman.</p>
                 <!-- <div class="row g-4">
@@ -258,13 +251,13 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-lg-6 wow fadeInDown" data-wow-delay="0.1s">
                     <div class="d-flex flex-column">
                         <img class="img-fluid rounded w-75 align-self-end" src="assets/img/fotolokasi.webp" alt="Foto Lokasi Heritage Medical">
                         <img class="img-fluid rounded w-50 bg-white pt-2 pe-2" src="assets/img/fotolokasi2.jpg" alt="Foto Interior" style="margin-top: -25%;">
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
                     <p class="d-inline-block border rounded-pill py-1 px-4 text-danger fw-semibold bg-white">Tentang Kami</p>
                     <h1 class="mb-4">Mengapa Memilih Kami? Kenali Heritage Medical Lebih Dekat</h1>
                     <p>Heritage Medical adalah Praktek Dokter dengan melayani Konsultasi dan Pemeriksaan Kesehatan, dan ditangani oleh
@@ -381,7 +374,7 @@
     <section id="artikel" style="background: linear-gradient(135deg, #fff5f5 0%, #ffe6e6 100%); position: relative; overflow: hidden;">
         <div class="container-xxl py-5 position-relative" style="z-index: 2;">
           <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center wow fadeInUp mb-5">
               <p class="d-inline-block border rounded-pill py-1 px-4 text-danger fw-semibold bg-white">Artikel</p>
               <h2 class="mb-4 text-dark">Informasi &amp; Artikel Terbaru</h2>
             </div>
@@ -396,10 +389,10 @@
               <div class="col-md-6 wow fadeInUp">
                 <div class="scroll-container d-flex overflow-auto gap-4 pb-2" id="scrollArticles">
                   
-                  <a href="javascript:void(0);" class="text-decoration-none flex-shrink-0 article-link"  data-id="1" style="width: 250px;">
+                  <a href="/artikel/detail?id=1" class="text-decoration-none flex-shrink-0 article-link" data-id="1" style="width: 250px;">
                     <div class="card border-0 rounded-4 shadow-sm hover-card">
                       <div class="position-relative">
-                        <img src="/assets/img/artikel/Gonorea.jpg" loading="lazy" class="card-img-top rounded-top-4" alt="...">
+                        <img src="/assets/img/artikel/Gonorea.jpg" loading="lazy" class="card-img-top rounded-top-4" alt="Gonorea">
                         <span class="badge bg-danger position-absolute top-0 start-0 m-2">INFO KESEHATAN</span>
                       </div>
                       <div class="card-body">
@@ -420,7 +413,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="#artikel" class="text-decoration-none flex-shrink-0 article-link"  data-id="3" style="width: 250px;">
+                  <a href="javascript:void(0);" class="text-decoration-none flex-shrink-0 article-link"  data-id="3" style="width: 250px;">
                     <div class="card border-0 rounded-4 shadow-sm hover-card">
                       <div class="position-relative">
                         <img src="/assets/img/artikel/kutil.jpg" loading="lazy" class="card-img-top rounded-top-4" alt="...">
@@ -432,7 +425,7 @@
                       </div>
                     </div>
                   </a>
-                  <a href="#artikel" class="text-decoration-none flex-shrink-0 article-link"  data-id="4" style="width: 250px;">
+                  <!-- <a href="#artikel" class="text-decoration-none flex-shrink-0 article-link"  data-id="4" style="width: 250px;">
                     <div class="card border-0 rounded-4 shadow-sm hover-card">
                       <div class="position-relative">
                         <img src="/assets/img/artikel/sifilis.jpg" loading="lazy" class="card-img-top rounded-top-4" alt="...">
@@ -455,7 +448,7 @@
                         <p class="text-muted small">01 April 2025</p>
                       </div>
                     </div>
-                  </a>
+                  </a> -->
       
                  
                 </div>
@@ -544,19 +537,23 @@
                     <input type="text" class="form-control border-0" placeholder="Nomor Telepon" id="mobile" required>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <select class="form-select border-0" id="doctor" required>
-                      <option selected disabled>Pilih Dokter</option>
-                      <option value="Doctor 1">Dokter 1</option>
-                      <option value="Doctor 2">Dokter 2</option>
-                      <option value="Doctor 3">Dokter 3</option>
+                    <select class="form-select border-0" id="layanan" required>
+                      <option selected disabled>Pilih Layanan</option>
+                      <option value="Pembersihan Miss V">Pembersihan Miss V</option>
+                      <option value="Pemeriksaan Lab">Pemeriksaan Lab</option>
+                      <option value="Pengobatan Suntik Sifilis/Gonore">Pengobatan Suntik Sifilis/Gonore</option>
+                      <option value="Laser Sunat/Kutil">Laser Sunat/Kutil</option>
                     </select>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <input type="text" class="form-control border-0 datetimepicker-input" id="dateInput" placeholder="Pilih Tanggal" required>
+                    <input type="date" class="form-control border-0" id="dateInput" required>
                   </div>
                   <div class="col-12 col-sm-6">
-                    <input type="text" class="form-control border-0 datetimepicker-input" id="timeInput" placeholder="Pilih Waktu" required>
+                    <select class="form-select border-0" id="timeInput" required>
+                    
+                    </select>
                   </div>
+                  
                   <div class="col-12">
                     <textarea class="form-control border-0" rows="4" placeholder="Keluhan Anda" id="problem"></textarea>
                   </div>
@@ -575,76 +572,79 @@
     
     <!-- Appointment End -->
       
-    <footer id="footer" class="footer-area bg-pink text-white pt-5 wow fadeIn">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- Logo & Deskripsi -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
-                        <h4 class="text-white ms-3 mb-0">Heritage Medical</h4>
-                    </div>
-                    <p class="text-white">Jl. Insinyur H. Juanda No.89, RT.001/RW.004, Bekasi Jaya, Kec. Bekasi Timur, Kota Bekasi, Jawa Barat 17113.</p>
-                    <p class="small text-white">Pelayanan kesehatan terpercaya dengan fasilitas modern dan tenaga medis profesional.</p>
-    
-                    <!-- Follow Us -->
-                    <div class="mt-4">
-                        <h6 class="text-white">Follow Us</h6>
-                        <div class="d-flex mt-2">
-                            <a href="#" class="social-icon me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Layanan -->
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-white mb-3">Layanan Kami</h5>
-                    <ul class="list-unstyled text-white">
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Konsultasi</li>
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Pembersihan & Perawatan miss v</li>
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Laboratorium</li>
-                        <li><i class="fa fa-angle-right me-2"></i>Pengobatan Suntik Sifilis/Gonore</li>
-                        <li><i class="fa fa-angle-right me-2"></i>Teknologi Laser Sunat/Kutil</li>
-                    </ul>
-                </div>
-    
-                <!-- Google Maps -->
-                <div class="col-md-12 col-lg-4">
-                    <h5 class="text-white mb-3">Lokasi</h5>
-                    <div class="position-relative rounded overflow-hidden shadow" style="height: 220px; border: 2px solid rgba(255,255,255,0.1);">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5406874117815!2d107.00399306945634!3d-6.242270666455222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d006998deeb%3A0xf5969d003d29ab0b!2sHeritage%20Medical!5e0!3m2!1sid!2sid!4v1746019146983!5m2!1sid!2sid" 
-                            width="100%" height="100%" 
-                            style="border:0; transition: transform 0.5s ease;" 
-                            allowfullscreen="" loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            onmouseover="this.style.transform='scale(1.02)'"
-                            onmouseout="this.style.transform='scale(1)'">
-                        </iframe>
-                        <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-1 small rounded-top">
-                            📍 Heritage Medical - Bekasi
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <hr class="border-top border-light my-4">
-    
-            <!-- Copyright -->
-            <div class="text-center small text-white">
-                &copy; 2025 <strong>Heritage Medical</strong>. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <footer id="footer" class="footer-area text-white pt-5" style="background: linear-gradient(135deg, #ff0000, #b30000);">
+      <div class="container">
+          <div class="row g-5 align-items-start">
+              <!-- Logo & Deskripsi -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="d-flex align-items-center mb-3">
+                      <img src="/assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
+                      <h4 class="text-white ms-3 mb-0 fw-bold">Heritage Medical</h4>
+                  </div>
+                  <p class="text-white mb-2">Jl. Insinyur H. Juanda No.89, Bekasi Timur, Kota Bekasi, Jawa Barat 17113.</p>
+                  <p class="text-white small">Pelayanan kesehatan terpercaya dengan fasilitas modern dan tenaga medis profesional.</p>
+  
+                  <!-- Follow Us -->
+                  <div class="mt-4">
+                      <h6 class="text-white mb-2">Follow Us</h6>
+                      <div class="d-flex gap-3">
+                          <!-- <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-tiktok"></i></a> -->
+                          <a href="https://www.instagram.com/heritagemedikal01/" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-instagram"></i></a>
+                          <!-- <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-twitter"></i></a> -->
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Layanan -->
+              <div class="col-md-6 col-lg-4">
+                  <h5 class="text-white mb-3 fw-semibold">Layanan Kami</h5>
+                  <ul class="list-unstyled text-white">
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Konsultasi</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Pembersihan & Perawatan miss v</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Laboratorium</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Suntik Sifilis/Gonore</li>
+                      <li><i class="fa fa-check-circle me-2 text-white"></i>Laser Sunat/Kutil</li>
+                  </ul>
+              </div>
+  
+              <!-- Google Maps -->
+              <div class="col-md-12 col-lg-4">
+                  <h5 class="text-white mb-3 fw-semibold">Lokasi</h5>
+                  <div class="position-relative rounded shadow overflow-hidden" style="height: 220px; border: 1px solid rgba(255,255,255,0.2);">
+                      <iframe 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5406874117815!2d107.00399306945634!3d-6.242270666455222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d006998deeb%3A0xf5969d003d29ab0b!2sHeritage%20Medical!5e0!3m2!1sid!2sid!4v1746019146983!5m2!1sid!2sid" 
+                          width="100%" height="100%" 
+                          style="border:0; transition: transform 0.3s ease;" 
+                          allowfullscreen="" loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade"
+                          onmouseover="this.style.transform='scale(1.02)'"
+                          onmouseout="this.style.transform='scale(1)'">
+                      </iframe>
+                      <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-1 small rounded-top">
+                          📍 Heritage Medical - Bekasi
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <hr class="border-top border-light-subtle my-4">
+  
+          <!-- Copyright -->
+          <div class="text-center small text-white-100">
+              &copy; 2025 <strong>Heritage Medical</strong>. All rights reserved.
+          </div>
+      </div>
+  </footer>
+  
     
     <!-- Back to Top -->
     <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
