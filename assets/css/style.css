@@ -40,6 +40,67 @@ body{
   transform: scale(1.02);
 }
 
+/* Logo image styling */
+.logo-modern {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.logo-modern:hover {
+    transform: scale(1.05);
+}
+
+/* Brand text next to logo */
+.brand-modern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+}
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #D32F2F; /* warna merah elegan */
+    font-family: 'Poppins', sans-serif;
+}
+.brand-sub {
+    font-size: 0.7rem;
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive optimization */
+@media (max-width: 576px) {
+    .brand-sub {
+        display: none;
+    }
+    .logo-modern {
+        height: 40px;
+    }
+}
+.menu-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #ff0000;
+}
+
+.half-circle-img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.half-circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -406,11 +467,49 @@ body{
     background: var(--primary);
     border-color: var(--primary);
 }
-
+/* 
 .page-header {
     background: url(../img/header-page.jpg) top center no-repeat;
     background-size: cover;
     text-shadow: 0 0 30px rgba(0, 0, 0, .1);
+} */
+
+.page-header {
+  position: relative;
+  background-color: #ff0000;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  color: white;
+  z-index: 10;
+}
+
+.half-circle-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.half-circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.breadcrumb-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #1e73be;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

@@ -131,83 +131,113 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm wow fadeIn" data-wow-delay="0.1s">
-        <div class="container px-4">
-            <!-- Logo -->
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <img src="/assets/img/logoheritage2.png" loading="lazy" alt="Logo" style="height: 70px; width: auto;">
-                <h4 class="text-pink2 ms-2 mt-2">Heritage Medical</h4>
-               
-            </a>
-    
-            <!-- Toggle Button for Mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Navbar Items -->
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto align-items-lg-center p-3 p-lg-0">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link active">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/about/" class="nav-link">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/artikel/" class="nav-link">Artikel</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="feature.html">Feature</a></li>
-                            <li><a class="dropdown-item" href="team.html">Our Doctor</a></li>
-                            <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
-                            <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
-                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                        </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="/kontak/" class="nav-link">Kontak Kami</a>
-                    </li>
-                </ul>
-                
-    
-                <!-- Appointment Button (Desktop Only) -->
-                <!-- <a href="appointment.html" class="btn btn-pink rounded-0 py-2 px-4 ms-lg-3 d-none d-lg-inline-block">
-                    Appointment <i class="fa fa-arrow-right ms-2"></i>
-                </a> -->
-            </div>
+      <div class="container px-4">
+          <!-- Logo -->
+          <a href="/" class="navbar-brand d-flex align-items-center">
+              <img src="/assets/img/logoheritage2.png" loading="lazy" alt="Logo" style="height: 70px; width: auto;">
+              <h4 class="text-pink2 ms-2 mt-2 mb-0" style="line-height: 1.2;">
+                Heritage<br><small class="text-muted">Medical</small>
+            </h4>
             
-        </div>
-         <!-- Gantungan papan di navbar -->
-         <div class="navbar-sign-container">
-            <div class="nail"></div>
-            <div class="swing-group" id="swingGroup">
-            <svg class="ropes" viewBox="0 0 100 60">
-                <line x1="50" y1="0" x2="20" y2="60" stroke="#333" stroke-width="2"/>
-                <line x1="50" y1="0" x2="80" y2="60" stroke="#333" stroke-width="2"/>
-            </svg>
-            <div class="signboard" id="signboard">
-                <span id="statusText">OPEN</span>
-            </div>
-            </div>
-        </div>
-    </nav>
+             
+          </a>
+  
+          <!-- Toggle Button for Mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ms-auto align-items-lg-center p-3 p-lg-0">
+                  <li class="nav-item">
+                      <a href="/" class="nav-link active">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/about/" class="nav-link">Tentang Kami</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/artikel/" class="nav-link">Artikel</a>
+                  </li>
+               
+                  <li class="nav-item">
+                      <a href="/kontak/" class="nav-link">Kontak Kami</a>
+                  </li>
+              </ul>
+              
+  
+              <!-- Appointment Button (Desktop Only) -->
+              <!-- <a href="appointment.html" class="btn btn-pink rounded-0 py-2 px-4 ms-lg-3 d-none d-lg-inline-block">
+                  Appointment <i class="fa fa-arrow-right ms-2"></i>
+              </a> -->
+          </div>
+          
+      </div>
+       <!-- Gantungan papan di navbar -->
+       <div class="navbar-sign-container">
+          <div class="nail"></div>
+          <div class="swing-group" id="swingGroup">
+          <svg class="ropes" viewBox="0 0 100 60">
+              <line x1="50" y1="0" x2="20" y2="60" stroke="#333" stroke-width="2"/>
+              <line x1="50" y1="0" x2="80" y2="60" stroke="#333" stroke-width="2"/>
+          </svg>
+          <div class="signboard" id="signboard">
+              <span id="statusText">OPEN</span>
+          </div>
+          </div>
+      </div>
+  </nav>
+  
     
     <!-- Navbar End -->
+    <!-- <div class="container-fluid page-header py-2 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 d-flex justify-content-between align-items-center">
+        <div class="content">
+          <h1 class="text-white mb-3 animated slideInDown">Artikel Intibios</h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb text-uppercase mb-0">
+              <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+              <li class="breadcrumb-item text-primary active" aria-current="page">Artikel</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="half-circle-img">
+          <img src="/assets/img/artikel.jpg" alt="Person reading" class="img-fluid">
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 d-flex justify-content-between align-items-center">
+        <div class="content">
+          <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+          <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb text-uppercase mb-0">
+              <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+              <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+              <li class="breadcrumb-item text-primary active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="half-circle-img">
+          <img src="/assets/img/artikel.jpg" alt="Contact Background" class="img-fluid">
+        </div>
+      </div>
+    </div> -->
+    
     
     
 
     <div class="container-xxl py-5 position-relative" style="z-index: 2;">
-      <div class="container">
+      <div class="container wow fadeInUp">
         <div class="text-center mb-5">
           <p class="d-inline-block border rounded-pill py-1 px-4 text-danger fw-semibold bg-white">Artikel</p>
           <h2 class="mb-4 text-dark">Informasi &amp; Artikel Terbaru</h2>
         </div>
     
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 ">
             <div class="row">
               <!-- Artikel 1 -->
               <div class="col-md-4">
@@ -301,69 +331,69 @@
 
    
       
-    <footer id="footer" class="footer-area bg-pink text-white pt-5 wow fadeIn">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <!-- Logo & Deskripsi -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="/assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
-                        <h4 class="text-white ms-3 mb-0">Heritage Medical</h4>
-                    </div>
-                    <p class="text-white">Jl. Insinyur H. Juanda No.89, RT.001/RW.004, Bekasi Jaya, Kec. Bekasi Timur, Kota Bekasi, Jawa Barat 17113.</p>
-                    <p class="small text-white">Pelayanan kesehatan terpercaya dengan fasilitas modern dan tenaga medis profesional.</p>
-    
-                    <!-- Follow Us -->
-                    <div class="mt-4">
-                        <h6 class="text-white">Follow Us</h6>
-                        <div class="d-flex mt-2">
-                            <a href="#" class="social-icon me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon me-2" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Layanan -->
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-white mb-3">Layanan Kami</h5>
-                    <ul class="list-unstyled text-white">
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Konsultasi</li>
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Pembersihan & Perawatan miss v</li>
-                        <li><i class="fa fa-angle-right mb-2 me-2"></i>Laboratorium</li>
-                        <li><i class="fa fa-angle-right me-2"></i>Pengobatan Suntik Sifilis/Gonore</li>
-                        <li><i class="fa fa-angle-right me-2"></i>Teknologi Laser Sunat/Kutil</li>
-                    </ul>
-                </div>
-    
-                <!-- Google Maps -->
-                <div class="col-md-12 col-lg-4">
-                    <h5 class="text-white mb-3">Lokasi</h5>
-                    <div class="position-relative rounded overflow-hidden shadow" style="height: 220px; border: 2px solid rgba(255,255,255,0.1);">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5406874117815!2d107.00399306945634!3d-6.242270666455222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d006998deeb%3A0xf5969d003d29ab0b!2sHeritage%20Medical!5e0!3m2!1sid!2sid!4v1746019146983!5m2!1sid!2sid" 
-                            width="100%" height="100%" 
-                            style="border:0; transition: transform 0.5s ease;" 
-                            allowfullscreen="" loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade"
-                            onmouseover="this.style.transform='scale(1.02)'"
-                            onmouseout="this.style.transform='scale(1)'">
-                        </iframe>
-                        <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-1 small rounded-top">
-                            📍 Heritage Medical - Bekasi
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <hr class="border-top border-light my-4">
-    
-            <!-- Copyright -->
-            <div class="text-center small text-white">
-                &copy; 2025 <strong>Heritage Medical</strong>. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    <footer id="footer" class="footer-area text-white pt-5" style="background: linear-gradient(135deg, #ff0000, #b30000);">
+      <div class="container">
+          <div class="row g-5 align-items-start wow fadeInLeft">
+              <!-- Logo & Deskripsi -->
+              <div class="col-md-6 col-lg-4">
+                  <div class="d-flex align-items-center mb-3">
+                      <img src="/assets/img/logoputih3.png" loading="lazy" alt="Logo Heritage Medical" style="height: 60px;">
+                      <h4 class="text-white ms-3 mb-0 fw-bold">Heritage Medical</h4>
+                  </div>
+                  <p class="text-white mb-2">Jl. Insinyur H. Juanda No.89, Bekasi Timur, Kota Bekasi, Jawa Barat 17113.</p>
+                  <p class="text-white small">Pelayanan kesehatan terpercaya dengan fasilitas modern dan tenaga medis profesional.</p>
+  
+                  <!-- Follow Us -->
+                  <div class="mt-4">
+                      <h6 class="text-white mb-2">Follow Us</h6>
+                      <div class="d-flex gap-3">
+                          <!-- <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-tiktok"></i></a> -->
+                          <a href="https://www.instagram.com/heritagemedikal01/" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-instagram"></i></a>
+                          <!-- <a href="#" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;"><i class="fab fa-twitter"></i></a> -->
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Layanan -->
+              <div class="col-md-6 col-lg-4">
+                  <h5 class="text-white mb-3 fw-semibold">Layanan Kami</h5>
+                  <ul class="list-unstyled text-white">
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Konsultasi</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Pembersihan & Perawatan miss v</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Laboratorium</li>
+                      <li class="mb-2"><i class="fa fa-check-circle me-2 text-white"></i>Suntik Sifilis/Gonore</li>
+                      <li><i class="fa fa-check-circle me-2 text-white"></i>Laser Sunat/Kutil</li>
+                  </ul>
+              </div>
+  
+              <!-- Google Maps -->
+              <div class="col-md-12 col-lg-4">
+                  <h5 class="text-white mb-3 fw-semibold">Lokasi</h5>
+                  <div class="position-relative rounded shadow overflow-hidden" style="height: 220px; border: 1px solid rgba(255,255,255,0.2);">
+                      <iframe 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5406874117815!2d107.00399306945634!3d-6.242270666455222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d006998deeb%3A0xf5969d003d29ab0b!2sHeritage%20Medical!5e0!3m2!1sid!2sid!4v1746019146983!5m2!1sid!2sid" 
+                          width="100%" height="100%" 
+                          style="border:0; transition: transform 0.3s ease;" 
+                          allowfullscreen="" loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade"
+                          onmouseover="this.style.transform='scale(1.02)'"
+                          onmouseout="this.style.transform='scale(1)'">
+                      </iframe>
+                      <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-1 small rounded-top">
+                          📍 Heritage Medical - Bekasi
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <hr class="border-top border-light-subtle my-4">
+  
+          <!-- Copyright -->
+          <div class="text-center small text-white-100">
+              &copy; 2025 <strong>Heritage Medical</strong>. All rights reserved.
+          </div>
+      </div>
+  </footer>
     
 
 
