@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         `⏰ Waktu: ${time}\n` +
         `📝 Keluhan: ${problem}`;
 
-      // const phone = "088809135353"; // Nomor WhatsApp klinik
-      const phone = "6281334485889"; // Nomor WhatsApp klinik
+      const phone = "088809135353"; // Nomor WhatsApp klinik
+      // const phone = "6281334485889"; // Nomor WhatsApp klinik
       const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
       window.open(whatsappURL, "_blank");
