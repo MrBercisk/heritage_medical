@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     updateSignStatus();
-    setInterval(updateSignStatus, 60000); // Perbarui setiap 1 menit
+    setInterval(updateSignStatus, 60000); 
 
     // Aktifkan menu navbar
     const currentPath = window.location.pathname.replace(/\/$/, "");
