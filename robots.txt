@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://heritage-medical.vercel.app/sitemap.xml
+Sitemap: https://heritagemedical.site/sitemap.xml
