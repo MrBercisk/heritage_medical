@@ -1,3 +1,26 @@
+# # Aktifkan Rewrite Engine
+# RewriteEngine On
+
+# # Redirect www ke non-www
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+# # Redirect HTTP ke HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# # Jika request bukan file atau direktori yang ada
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+
+# # Rule untuk artikel detail
+# RewriteRule ^artikel/detail$ /artikel/detail/index.html [L]
+
+# # Menghilangkan .html dari URL
+# RewriteCond %{REQUEST_FILENAME}.html -f
+# RewriteRule ^(.*)$ $1.html [L]
+
+# Aktifkan Rewrite Engine
 # Aktifkan Rewrite Engine
 RewriteEngine On
 
@@ -13,9 +36,14 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Rule untuk artikel detail
-RewriteRule ^artikel/detail$ /artikel/detail/index.html [L]
+# Redirect hanya file index.html di dalam folder ke root index.html
+RewriteRule ^(about|artikel|kontak)/index\.html$ /index.html [L]
 
-# Menghilangkan .html dari URL
+# Redirect artikel/detail/index.html ke root index.html juga
+RewriteRule ^artikel/detail/index\.html$ /index.html [L]
+
+# (Opsional) Hilangkan .html jika file ada
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
+
+
